@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perpustakaan Cendikia Nusantara</title>
+
+  <!-- Tambahkan font Long Cang -->
+  <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+
+  <!-- Tetap hubungkan ke CSS kamu -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="Image/logo fiks.png" alt="Logo Perpustakaan">
+      <span>Perpustakaan Cendikia Nusantara</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="Tentang kami.html" class="active">Tentang kami</a></li>
+        <li><a href="Koleksi.html">Koleksi</a></li>
+        <li><a href="Layanan.html">Layanan</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="My account.html"> My Account</a></li>
+      </ul>
+    </nav>
+
+    <div class="account">
+      <button class="login-btn" onclick="bukaPopup()">Login</button>
+      <input type="text" placeholder="Search...">
+    </div>
+    <!-- Popup Login -->
+    <div id="popupLogin" class="popup">
+      <div class="popup-content">
+        <button class="close-btn" onclick="tutupPopup()">X</button>
+        <h3>Form Login</h3>
+        <form>
+          <input type="text" placeholder="Username" required><br>
+          <input type="password" placeholder="Password" required><br>
+          <button type="submit" class="login-submit">Login</button>
+        </form>
+        <p>Belum punya akun? <a href="#">Daftar</a></p>
+      </div>
+    </div>
+  </header>
+  <!-- Banner -->
+  <section class="banner">
+    <img src="image/Foto tentangkami.jpg" alt="Perpustakaan" class="banner-img">
+    <div class="banner-text">
+      <h2>Tentang Perpustakaan Cendekia Nusantara</h2>
+      <p>Ruang Ilmu dan Pengembangan Literasi</p>
+    </div>
+  </section>
+
+  <!-- Info Grid -->
+  <section class="info-section">
+    <div class="card">
+      <h3>Visi & Misi</h3>
+      <p>Tentang Perpustakaan Kami</p>
+    </div>
+
+    <div class="card">
+      <h3>Sejarah Kami</h3>
+      <p>Sejarah dan Struktur Organisasi</p>
+    </div>
+
+    <div class="card">
+      <h3>Jam Operasional</h3>
+      <p>Senin – Jumat<br>08.00 – 16.00 WIB</p>
+    </div>
+
+    <div class="card">
+      <h3>Lokasi Kami</h3>
+      <p>Jalan Purnawijayan No. 23, Kelurahan Prenggan,<br>Kecamatan Kotagede, Kota Yogyakarta</p>
+    </div>
+
+    <div class="card">
+      <h3>Kontak</h3>
+      <p>085895942479<br>perpuscendinus@gmail.com</p>
+    </div>
+
+    <div class="card">
+      <h3>Media Sosial</h3>
+      <p>@PerpusCendiNus.id<br>@PerpusCendiNus</p>
+    </div>
+  </section>
+
+  <!-- Saran dan Masukan (perbaikan) -->
+<section class="saran">
+  <div class="saran-inner">
+    <h2 class="saran-title">Saran dan Masukan</h2>
+
+    <p class="saran-desc">
+      Kamu bisa tulis kritik, saran, masukan, maupun komentar tentang Perpustakaan Cendikia Nusantara.
+      Terima kasih telah ikut berpartisipasi.
+    </p>
+
+    <form class="saran-form" action="#" method="post" novalidate>
+      <label for="nama">Nama Lengkap <span class="required">*</span></label>
+      <input id="nama" name="nama" type="text" placeholder="Jawaban Anda" required>
+
+      <label for="pemberi">Pemberi Saran <span class="required">*</span></label>
+      <input id="pemberi" name="pemberi" type="text" placeholder="Siswa, Karyawan, Mahasiswa, Umum" required>
+
+      <div class="row">
+        <div class="col">
+          <label for="kategori">Kategori Saran <span class="required">*</span></label>
+          <input id="kategori" name="kategori" type="text" placeholder="Isi kategori saran" required>
+        </div>
+        <div class="col">
+          <label for="isi">Isi Saran <span class="required">*</span></label>
+          <textarea id="isi" name="isi" rows="4" placeholder="Tuliskan saran Anda di sini..." required></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="saran-submit">Kirim</button>
+    </form>
+  </div>
+</section>
+
+  
+<!-- Footer -->
+  <footer>
+    <p>Jl. Tentara Pelajar No. 2, Salatiga - (0298) 123456 - Email: library@uin-salatiga.ac.id</p>
+    <p>© Hak Cipta 2022 - Perpustakaan Universitas Islam Negeri Salatiga</p>
+  </footer>
+  
+</body>
+</html>
